@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coach Official Website</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="coach.html"><img src="img/logo-l.svg" id="bigLogo" class="w3-middle"></a>
+		<nav class="w3-row" >
+			<div class="w3-col s11 m2 l3"><a href="coach.html"><img src="img/logo-s.svg" id="smallLogo"></a></div>
+			<ul class="w3-col m10 l9">
+				<li class="womenDrop">
+					<a>WOMEN</a>
+					<div class="dropdown">
+						<a href="women.html">Bags</a>
+						<a href="">Shoes</a>
+						<a href="">Clothes</a>
+						<a href="">Accessories</a>
+					</div>
+				</li>
+				<li><a>MEN</a></li>
+				<li><a>GIFTS</a></li>
+				<li><a>PERSONALIZE</a></li>
+				<li><a>SALE</a></li>
+				<li style="float: right;"><button id="signNav">SIGN IN</button></li>
+			</ul>
+			<div class="w3-col s1 m1 w3-text-white menu-icon">
+				<button id="burgerBtn"><i class="material-icons">menu</i></button>
+				<div class="dropdown" id="burgerDrop">
+					<a id="nestDrop">WOMEN</a>
+					<div class="dropdown" id="womenNest">
+						<a href="women.html" class="nest-link">Bags</a>
+						<a href="" class="nest-link">Shoes</a>
+						<a href="" class="nest-link">Clothes</a>
+						<a href="" class="nest-link">Accessories</a>
+					</div>
+					<a href="">MEN</a>
+					<a href="">GIFTS</a>
+					<a href="">PERSONALIZE</a>
+					<a href="">SALE</a>
+					<button id="nestSign" style="text-align: center; border-top:1px solid white; padding: 15px;">Sign In</button>
+				</div>
+			</div>
+		</nav>
+		<div id="signInBox">
+			<div id="sign-content">
+				<span id="close">&times;</span>
+				<h4 class="w3-center w3-margin">Welcome Back</h4>
+				<form>
+					<label>EMAIL ADDRESS<sup>*</sup></label><br>
+					<input type="email" name="email" class="wideInput"><br><br>
+					<label>PASSWORD<sup>*</sup></label><br>
+					<input type="password" name="password" class="wideInput"><br><br>
+					<input type="checkbox" name="remember" class="w3-small"><em>Remember Me</em>
+					<a href="signUp.html" class="w3-hover-text-orange">CREATE AN ACCOUNT</a><br>
+					<div><button type="button" class="w3-hover-teal sign-up-btn">SIGN IN</button></div>
+				</form>
+			</div>
+		</div>
+	</header>
+	<div><img src="img/front.jpg" class="frontImg"></div>
+	<main class="container">
+		<div class="owl-carousel">
+			<img src="img/main-1.jpg">
+			<img src="img/main-2.jpg">
+		</div>
+	</main>
+	<footer>
+		<article class="w3-row">
+			<section class="w3-col x12 m6 l3">
+				<h6>STORES & SITES</h6>
+				<ul class="footerDetail">
+					<li>Store Locator</li>
+					<li>International Sites</li>
+					<li>Site Map</li>
+					<li>Security & Privacy</li>
+				</ul>
+			</section>
+			<section class="w3-col x12 m6 l3">
+				<h6>CUSTOMER CARE</h6>
+				<ul class="footerDetail">
+					<li>Order Status</li>
+					<li>Shipping Information</li>
+					<li>Returns & Exchanges</li>
+					<li>Repair Services</li>
+				</ul>
+			</section>
+			<section class="w3-col x12 m6 l3">
+				<h6>ABOUT US</h6>
+				<ul class="footerDetail">
+					<li>Our Story</li>
+					<li>Careers</li>
+					<li>Investor Relations</li>
+					<li>Corporate Responsilibity</li>
+				</ul>
+			</section>
+			<section class="w3-col x12 m6 l3">
+				<h6>FOLLOW US</h6>
+				<ul class="footerDetail">
+					<li><i class="fa fa-facebook-square" style="margin-right: 5px;"></i>Facebook</li>
+					<li><i class="fa fa-twitter-square" style="margin-right: 5px;"></i>Twitter</li>
+					<li><i class="fa fa-instagram" style="margin-right: 5px;"></i>Instagram</li>
+					<li><i class="fa fa-pinterest-square" style="margin-right: 5px;"></i>Pinterest</li>
+				</ul>
+			</section>
+		</article>
+		<p class="w3-center w3-margin">
+			copyright @ Jingying Wang, 2017
+		</p>
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                margin:10,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed:1000,
+                autoplayHoverPause: false
+              });
+		});
+	</script>
+	<script type="text/javascript" src="scroll.js"></script>
+	<script type="text/javascript" src="sign-box.js"></script>
+	<script type="text/javascript" src="burger-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DINKY Bag</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script type="text/javascript" src="scroll.js"></script>
+</head>
+<body>
+	<header>
+		<a href="coach.html"><img src="img/logo-l.svg" id="bigLogo" class="w3-middle"></a>
+		<nav class="w3-row" >
+			<div class="w3-col s11 m2 l3"><a href="coach.html"><img src="img/logo-s.svg" id="smallLogo"></a></div>
+			<ul class="w3-col m10 l9">
+				<li class="womenDrop">
+					<a>WOMEN</a>
+					<div class="dropdown">
+						<a href="women.html">Bags</a>
+						<a href="">Shoes</a>
+						<a href="">Clothes</a>
+						<a href="">Accessories</a>
+					</div>
+				</li>
+				<li><a>MEN</a></li>
+				<li><a>GIFTS</a></li>
+				<li><a>PERSONALIZE</a></li>
+				<li><a>SALE</a></li>
+				<li style="float: right;"><button id="signNav">SIGN IN</button></li>
+			</ul>
+			<div class="w3-col s1 m1 w3-text-white menu-icon">
+				<button id="burgerBtn"><i class="material-icons">menu</i></button>
+				<div class="dropdown" id="burgerDrop">
+					<a id="nestDrop">WOMEN</a>
+					<div class="dropdown" id="womenNest">
+						<a href="women.html">Bags</a>
+						<a href="">Shoes</a>
+						<a href="">Clothes</a>
+						<a href="">Accessories</a>
+					</div>
+					<a href="">MEN</a>
+					<a href="">GIFTS</a>
+					<a href="">PERSONALIZE</a>
+					<a href="">SALE</a>
+					<button id="nestSign" style="text-align: center; border-top:1px solid white; padding: 15px;">Sign In</button>
+				</div>
+			</div>
+		</nav>
+		<div id="signInBox">
+			<div id="sign-content">
+				<span id="close">&times;</span>
+				<h4 class="w3-center w3-margin">Welcome Back</h4>
+				<form>
+					<label>EMAIL ADDRESS<sup>*</sup></label><br>
+					<input type="email" name="email" class="wideInput"><br><br>
+					<label>PASSWORD<sup>*</sup></label><br>
+					<input type="password" name="password" class="wideInput"><br><br>
+					<input type="checkbox" name="remember" class="w3-small"><em>Remember Me</em>
+					<a href="signUp.html" class="w3-hover-text-orange">CREATE AN ACCOUNT</a><br>
+					<div><button type="button" class="w3-hover-teal sign-up-btn">SIGN IN</button></div>
+
+				</form>
+			</div>
+		</div>
+	</header>
+	<article id="page-label">
+		<p>Main > Women > Bags</p>
+	</article>
+	<main class="w3-row">
+		<div class="w3-col m12 l6">
+			<div class="main-pic w3-row"><img src="img/2.jpeg" class="w3-col l12"></div>
+			<div class="detail-pic w3-row">
+				<img src="img/2-2.jpeg" class="w3-col m6 l6">
+				<img src="img/2-3.jpeg" class="w3-col m6 l6">
+			</div>
+			<div class="detail-pic w3-row">
+				<img src="img/2-4.jpeg" class="w3-col m6 l6">
+				<img src="img/2-5.jpeg" class="w3-col m6 l6">
+			</div>
+		</div>
+		<div class="w3-col m12 l6 detail-info">
+			<h2>DINKY</h2>
+			<h4><em>in glovetanned leather with wild tea rose</em></h4>
+			<h4>$695</h4>
+			<div id="tiggle-labels">
+				<h6>DESCRIPTION</h6>
+				<p class="tiggle desc">Inspired by free spirits, rebels and dreams, "the little bas that could" is a longtime Coach favorite, thanks to its minimalist crossbody-to-clutch design. The studded, hand-painted Wild Tea Rose applique celebrates biker style and our legacy of leather craftsmanship.</p>
+				<h6>DETAILS</h6>
+				<ul class="tiggle detail">
+					<li>GLovetanned leather</li>
+					<li>Turnlock closure, leather lining</li>
+					<li>Inside open and coin purse pockets</li>
+					<li>Outside slip pocket</li>
+					<li>Removable strap</li>
+				</ul>
+				<h6>Reviews</h6>
+				<p class="tiggle review">VERY NICE<br>There is another brand of bags that sell similar items. Although they are cute the mechanism to attach to the bag is very difficult to use. There are easy and yet secure. I use it almost everyday. It is useful other than just being a charming bag.</p>
+			</div>
+			<div class="w3-row add-product">
+				<div class="w3-col s5 m4 l4 w3-padding-top">
+					<div class="w3-row">
+						<span>QTY</span><span style="float: right">In Stock</span>
+					</div>
+					<div class="w3-row qty-select">
+						<select name="qty">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+				<button class="w3-col s5 m7 l7 w3-center w3-margin w3-padding w3-hover-teal add-chart">Add to Chart</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<article class="w3-row">
+			<section class="w3-col x12 m6 l3">
+				<h6>STORES & SITES</h6>
+				<ul class="footerDetail">
+					<li>Store Locator</li>
+					<li>International Sites</li>
+					<li>Site Map</li>
+					<li>Security & Privacy</li>
+				</ul>
+			</section>
+			<section class="w3-col x12 m6 l3">
+				<h6>CUSTOMER CARE</h6>
+				<ul class="footerDetail">
+					<li>Order Status</li>
+					<li>Shipping Information</li>
+					<li>Returns & Exchanges</li>
+					<li>Repair Services</li>
+				</ul>
+			</section>
+			<section class="w3-col x12 m6 l3">
+				<h6>ABOUT US</h6>
+				<ul class="footerDetail">
+					<li>Our Story</li>
+					<li>Careers</li>
+					<li>Investor Relations</li>
+					<li>Corporate Responsilibity</li>
+				</ul>
+			</section>
+			<section class="w3-col x12 m6 l3">
+				<h6>FOLLOW US</h6>
+				<ul class="footerDetail">
+					<li><i class="fa fa-facebook-square" style="margin-right: 5px;"></i>Facebook</li>
+					<li><i class="fa fa-twitter-square" style="margin-right: 5px;"></i>Twitter</li>
+					<li><i class="fa fa-instagram" style="margin-right: 5px;"></i>Instagram</li>
+					<li><i class="fa fa-pinterest-square" style="margin-right: 5px;"></i>Pinterest</li>
+				</ul>
+			</section>
+		</article>
+		<p class="w3-center w3-margin">
+			copyright @ Jingying Wang, 2017
+		</p>
+	</footer>
+	<script type="text/javascript" src="scroll.js"></script>
+	<script type="text/javascript" src="sign-box.js"></script>
+	<script type="text/javascript" src="burger-menu.js"></script>
+</body>
+</html>
